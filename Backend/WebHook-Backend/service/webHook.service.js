@@ -6,7 +6,7 @@ export class WebHookService {
 
   static async WebHookHandler(data) {
     console.log(data, 'data');
-    
+
     const { status } = data.data.payment;
 
     if (status === "succeeded") {
